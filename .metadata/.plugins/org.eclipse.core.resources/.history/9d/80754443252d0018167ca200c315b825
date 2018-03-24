@@ -1,0 +1,25 @@
+
+public class Car {
+		
+	private String color;
+	private double weight;
+	private double capacity;
+	private int passangersCount;
+	
+	public Car(String color, double weight, double capacity, int passangersCount) {
+		this.color = color;
+		this.weight = weight;
+		this.capacity = capacity;
+		this.passangersCount = passangersCount;
+	}
+	
+	public String getColor() {
+		return this.color;
+	}
+	
+//	public String setColor(String color) {
+//		this.color = color;
+//	}
+	
+	
+}

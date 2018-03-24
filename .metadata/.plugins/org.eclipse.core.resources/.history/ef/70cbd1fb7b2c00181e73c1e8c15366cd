@@ -1,0 +1,26 @@
+package PasswordGenerator;
+
+import java.util.*;
+
+public class PasswordGenerator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		listUsers();
+	}
+	
+	private static void listUsers() {
+		Password user1 = new Password();
+		Password user2 = new Password();
+		
+		
+		
+		Set<String> userList = new TreeSet<>();
+		userList.add("Adam");
+		//userList.add(user2);
+		
+		user1.showData();
+		
+	}
+}

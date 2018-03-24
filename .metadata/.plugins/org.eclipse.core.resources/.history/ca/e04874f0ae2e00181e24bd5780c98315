@@ -1,0 +1,12 @@
+package ExercisesInheritence;
+
+public abstract class Car {
+	protected int numberWheel;
+	
+	public Car(int numberWheel) {
+		this.numberWheel = numberWheel;
+	}
+	
+	public abstract void showWeight();
+	
+}

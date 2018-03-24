@@ -1,0 +1,19 @@
+package ExercisesInheritence;
+
+public class MultiCar extends Car {
+
+	protected int numberWeight;
+	
+	
+	public MultiCar(int numberWheel, String nameOfCar, int numberWeight) {
+		super(numberWheel, nameOfCar);
+		this.numberWeight = numberWeight;
+		
+		
+	}
+	
+	public void showWeight() {
+		System.out.println("The weight of a car is: " + this.numberWeight);
+	}
+	
+}

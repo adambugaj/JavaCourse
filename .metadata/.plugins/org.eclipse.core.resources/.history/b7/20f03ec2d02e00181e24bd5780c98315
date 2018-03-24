@@ -1,0 +1,57 @@
+package ExceptionsWithTry;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.Map.Entry;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<Integer> pierwsze = new HashSet<>();
+		pierwsze.add(3);
+		pierwsze.add(7);
+		Set<Integer> drugiZbiór = new TreeSet<>(pierwsze);
+		Set<Integer> trzeciZbiór = new LinkedHashSet(pierwsze);
+		
+		List<Integer> lists = new LinkedList(pierwsze);
+		
+	}
+	
+	// pobieranie mapy
+	public void list() {
+		List<Integer> list = new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		
+		Set<Integer> zbior = new HashSet<>(list);
+	}
+	
+	public void map() {
+		Map<Integer, List<Integer>> podzielne = new HashMap<>();
+		podzielne.put(2, new LinkedList<>());
+		podzielne.put(5, new LinkedList<>());
+		podzielne.put(3, new ArrayList<>());
+		
+		podzielne.get(2).add(8);
+		podzielne.get(3).add(15);
+		
+		for(Entry<Integer, List<Integer>> entery : podzielne.entrySet()) {
+			System.out.println(entry.getKey() + " :");
+			for(Integer val : entry.getValue()) {
+				System.out.println(val + " ");
+			}
+			System.out.println();
+			System.out.println("__________");
+		}
+		
+	}
+
+}

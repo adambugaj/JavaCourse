@@ -1,0 +1,53 @@
+import java.util.*;
+
+public class Collections {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ex1();
+		ex2();
+		
+	}
+	
+	private static void ObjectEx() {
+		Map<String, Car> cars = new HashMap<>();
+		cars.put("AKD 1234", new Car("Red", 120, 2, 3));
+	}
+	
+	
+	
+	private static void ex1() {
+		
+		Map<String, Integer> sprzeda¿ = new HashMap<>();
+		
+		sprzeda¿.put("AUDI", 3);
+		sprzeda¿.put("BMW", 7);
+		
+		for (String key : sprzeda¿.keySet()) {
+			System.out.println(key + " " + sprzeda¿.get(key));
+		}
+		
+		int totalSale = 0;
+		for(Integer value : sprzeda¿.values()) {
+			totalSale += value;
+		}
+		System.out.println("Ca³oœæ: " + totalSale);
+	}
+	
+	private static void ex2() {
+		
+		Map<Integer, String> blok = new HashMap<>();
+		blok.put(1, "Michael Wiœniewski");
+		blok.put(2, "Monica Flower");
+		
+		Iterator<Integer> it = blok.keySet().iterator();
+		while(it.hasNext()) {
+			Integer key = it.next();
+			System.out.println(key + " " + blok.get(key));
+		}
+		// System.out.println(blok.get(2));
+		
+	}
+	
+}

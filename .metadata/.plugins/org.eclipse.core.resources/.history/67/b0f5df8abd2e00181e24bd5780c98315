@@ -1,0 +1,20 @@
+package Game;
+
+import java.util.Random;
+
+public class RandomNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		playGame();
+	}
+	public static int randomNumberComputer;
+	
+	public static void playGame() {
+		Random random = new Random();
+		randomNumberComputer = random.nextInt(100);
+		System.out.println(randomNumberComputer);
+		
+	}
+
+}

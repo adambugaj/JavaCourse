@@ -1,0 +1,14 @@
+
+public class ObjectsExercise {
+
+	public static void main(String[] args) {
+		// Obiektowoœæ æwiczenia - show object 
+		
+		PeopleData newPerson = new PeopleData();
+		
+		newPerson.provideName("Adam");
+		newPerson.provideAgeHeight(22, 182);
+		newPerson.showPersonData();
+		
+	}
+}

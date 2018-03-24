@@ -1,0 +1,17 @@
+package ExercisesInheritence;
+
+public abstract class Car {
+	protected int numberWheel;
+	
+	public Car(int numberWheel) {
+		this.numberWheel = numberWheel;
+	}
+	
+	public abstract void showWeight();
+	
+	public void showNumberOfWheel() {
+		System.out.println("The number of wheel is: " + numberWheel);
+	
+	}
+	
+}

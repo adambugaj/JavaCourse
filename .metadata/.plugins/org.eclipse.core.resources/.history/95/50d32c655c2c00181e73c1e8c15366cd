@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.*;
+
+public class Person {
+	
+	String firstName;
+	String surName;
+	int age = 0;
+	
+	public Person(String firstName, String surName, int age) {
+		this.firstName = firstName;
+		this.surName = surName;
+		this.age = age;
+	}
+	
+	public void lists() {
+		List<Person> peopleList = new LinkedList<>();
+		
+		
+		System.out.println(this.firstName);
+		
+		List<String> name2 = new LinkedList<>(Arrays.asList("Pet","John"));
+		
+	}
+	
+}

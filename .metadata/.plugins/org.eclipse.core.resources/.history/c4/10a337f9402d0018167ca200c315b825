@@ -1,0 +1,59 @@
+package PasswordGenerator;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Password {
+
+	private String randomPassword;
+	private int savedPassword = 0;
+	private String userName;
+	private String department;
+	
+	public Password() {
+		this.userName = setUsername();
+		this.department = setDepartment();
+		this.randomPassword = generatePassword();
+	}
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	private String setDepartment() {	
+		System.out.println("1. IT, 2. PR, 3. WEB \nChoose department 1, 2, 3"); 
+		int departNumber = scanner.nextInt();
+		
+		if (departNumber == 1) return "IT";
+		if (departNumber == 2) return "PR";
+		if (departNumber == 3) return "WEB";
+		return "";
+	}
+	
+	private String setUsername() {
+		System.out.print("Provide username: ");
+		userName = scanner.next();
+		return userName;
+	}
+	
+	public void showData() {
+		System.out.println("Your data is: " + this.userName + " " + this.department + "\nYour password is: " + this.randomPassword);  
+	}
+	
+	private String generatePassword() {
+		Random random = new Random();
+		System.out.println("Genereting random password...");
+		String[] forPassword = {"0","1","2","3","a","b","c","d","e"};
+		
+		randomPassword = forPassword[random.nextInt(10)];
+		
+		System.out.println("Done");
+		return randomPassword;
+	}
+
+	public void setSavedPassword() {
+		
+	}
+
+	public int getSavedPassword() {
+		return savedPassword;
+	}
+}

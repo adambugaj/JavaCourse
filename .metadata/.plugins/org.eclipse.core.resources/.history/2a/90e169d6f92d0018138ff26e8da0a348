@@ -1,0 +1,16 @@
+package Figures;
+
+public abstract class Figure {
+	
+	protected float x;
+	protected float y;
+	
+	public Figure(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	public abstract void draw();
+	
+	
+}

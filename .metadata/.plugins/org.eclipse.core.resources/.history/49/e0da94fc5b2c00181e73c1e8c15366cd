@@ -1,0 +1,14 @@
+
+public class Person {
+	
+	String firstName;
+	String surName;
+	int age = 0;
+	
+	public Person(String firstName, String surName, int age) {
+		this.firstName = firstName;
+		this.surName = surName;
+		this.age = age;
+	}
+	
+}

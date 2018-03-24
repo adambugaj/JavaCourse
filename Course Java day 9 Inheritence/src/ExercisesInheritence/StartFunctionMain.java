@@ -1,0 +1,15 @@
+package ExercisesInheritence;
+
+public class StartFunctionMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car multiCar = new MultiCar(15, "VW", 3, 11);
+		multiCar.showWeight();
+		multiCar.showNumberOfWheel();
+		multiCar.showNumberOfDoors();
+		
+	}
+	
+
+}
