@@ -25,12 +25,13 @@ public class Password {
 	Scanner scanner = new Scanner(System.in);
 	
 	private String setDepartment() {	
-		System.out.println("1. IT, 2. PR, 3. WEB \nChoose department 1, 2, 3"); 
+		System.out.println("1. IT, 2. PR, 3. WEB 4.HR\nChoose department 1, 2, 3, 4"); 
 		int departNumber = scanner.nextInt();
 		
 		if (departNumber == 1) return "IT";
 		if (departNumber == 2) return "PR";
 		if (departNumber == 3) return "WEB";
+		if (departNumber == 4) return "HR";
 		return "";
 	}
 	

@@ -24,10 +24,7 @@ public class RandomNumber {
 	public static void userGuess() {
 		Scanner scanner = new Scanner(System.in);
 		
-		
-		
 		// System.out.println("Your number is " + userNumber);
-		
 		
 		int numberTries = 0;
 		while (numberTries < 10) {

@@ -42,7 +42,7 @@ public class PasswordGenerator {
 				// Jak sciagnac zmienn¹ z listy?
 				System.out.println("Login accepted" + userList.get(i));
 			} else {
-				System.out.println("Login is not accepted");
+				System.out.println("Login is not accepted. Please try again");
 			}
 		}
 	}
